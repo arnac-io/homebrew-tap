@@ -11,7 +11,7 @@ class HistorySanitizer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.1.0/history-sanitizer_Darwin_x86_64.tar.gz"
-      sha256 "946b95622ba5a269c26b4cf607c08dc2f189255065c2e8ae3bdb273459fa440f"
+      sha256 "a426eeb8334d6cc21f57d8a27acd61c66d59aed9cb243feeba5f071aed0b6353"
 
       def install
         bin.install "history-sanitizer"
@@ -19,7 +19,7 @@ class HistorySanitizer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.1.0/history-sanitizer_Darwin_arm64.tar.gz"
-      sha256 "76e26e59a95ff82ce97655c4f44d67b6d5908f259f84fc5409d8e6388ed6c417"
+      sha256 "ed0ee222542301bf9df217eb70e5f3fc5c6e3ea41f8efc671e9165a9521beeb5"
 
       def install
         bin.install "history-sanitizer"
@@ -30,14 +30,14 @@ class HistorySanitizer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.1.0/history-sanitizer_Linux_x86_64.tar.gz"
-      sha256 "b43bcead37825270913c6a0231f38a2e5b7e171019401635675c648fa5314bec"
+      sha256 "fe32e2a8a8067d1a601fa0f93625f98547c06420cd3ddfaaa61a7ec26e1cbb6d"
       def install
         bin.install "history-sanitizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.1.0/history-sanitizer_Linux_arm64.tar.gz"
-      sha256 "7db549fe39f1fb243fe200ffe14a0e3935e8e90bd1833ac2c3f0eec61114009f"
+      sha256 "e31e418cc7a690886317ec6532abcfdb093a5318c90c3d90d043df26289410e0"
       def install
         bin.install "history-sanitizer"
       end
