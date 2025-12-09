@@ -5,21 +5,21 @@
 class HistorySanitizer < Formula
   desc "Tool to sanitize shell history content"
   homepage "https://github.com/arnac-io/history-sanitizer"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.4.0/history-sanitizer_Darwin_x86_64.tar.gz"
-      sha256 "8ab6a8827977420921dd8e2de6921d7e8aebf51bf419e04e903dd6688504371f"
+      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.5.0/history-sanitizer_Darwin_x86_64.tar.gz"
+      sha256 "cf5baebaccfaacb32619a7793209f96550fde86b3be9e5a9b621f8c5cac1b6b7"
 
       def install
         bin.install "history-sanitizer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.4.0/history-sanitizer_Darwin_arm64.tar.gz"
-      sha256 "712dc960ce3f8177336f1e39185140ab6ba57656bbf4e4fe30898e8e252b18c5"
+      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.5.0/history-sanitizer_Darwin_arm64.tar.gz"
+      sha256 "13e6a81b83eb898e9eb3076bd257a17e1432a000558bc7c877ce209228157c2f"
 
       def install
         bin.install "history-sanitizer"
@@ -29,15 +29,15 @@ class HistorySanitizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.4.0/history-sanitizer_Linux_x86_64.tar.gz"
-      sha256 "fab49b8ec343e5c60a6801a546ca67252f0f4a42ebdd56d3ee9a08a8a5eb7da2"
+      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.5.0/history-sanitizer_Linux_x86_64.tar.gz"
+      sha256 "0a2fd2c18eeffee650ce978c072fbd8f6d1f8c30e86e290f3c68d5c33adc2d0b"
       def install
         bin.install "history-sanitizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.4.0/history-sanitizer_Linux_arm64.tar.gz"
-      sha256 "4114cda230517732027941dee7029984cd466accb581dd972b04d08a7bc389a9"
+      url "https://github.com/arnac-io/history-sanitizer/releases/download/v0.5.0/history-sanitizer_Linux_arm64.tar.gz"
+      sha256 "b1f7af442b3192ae6fbe249e9de5389341ab302a75aa69010caf4feaf1babf23"
       def install
         bin.install "history-sanitizer"
       end
